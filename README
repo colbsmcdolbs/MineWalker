@@ -1,0 +1,62 @@
+# Project 5: MineWalker
+
+* Colby Allen
+* Class: CS121-2
+* Semester: Spring 2018
+
+## Overview
+This project allows the user to play a game of walking past mines, by using clues that the game gives you in order to avoid them.
+You get 5 lives, try to take the least amount of steps for the highest score!
+
+## Compiling and Using
+To run this code, all you must do is compile by entering the command
+
+$ javac MineWalker.java
+
+And then once it has compiled (It might yell at you for not using a java API for the sound effects present),
+enter this command;
+
+$ java MineWalker
+
+This will then put you into the game, exit out of the window when you are done!
+
+
+## Discussions
+Some of the biggest problems I had in making this project, were converting my point arraylists into something that my
+tiles[x][y] could understand, but with help from Professor Schmidt, this was made very helpful.  Also, I could not understant why
+my scores/lives were not updating as they would deplete, it took me a lot of Googling before I found out that they had to be in an
+actionlistener, so that they would keep updating every move.  I never fully implemented the logic for putting the current tile back onto
+the previous one after hitting a mine, so it is possible for the player to move on from a mine, instead of having to go around.  Fortunately,
+once a mine has been hit and you leave it, it is impossible to click on the mine again.  I understand that I will lose points for this, but
+ I am hoping that the extra credit with I did with the sound effects will help to keep me afloat in the A-range.  Going through the process
+ of the labs forcing us to work on our projects was incredibly handy and made it seem like anything was possible in this project, and very
+ necessary.  The research that I did on my own (website links will be pasted down below) included putting sounds within programs, as well as
+ making pop up menus appear.  Some errors that I got when I finally uploaded everything onto MobaXTerm was that the program could for some
+ reason not find the audio files it is supposed to be playing, but it worked on my laptop (effectively annoying my wife to death) so I hope
+ that it works for you Professor Schmidt.  In this project, I finally felt that I could understand what the people on StackOverload would 
+ talk about, and from that, I feel like I could program anything in the world if I wanted to, because all of the information you need is 
+ out there somewhere, this feeling was very liberating.  
+ 
+ 
+ ## Testing
+ I tested my code by running it seemingly every two seconds after I would implement any new methods, just to see if it still worked and if
+ what I attempted to do was successfull.  I ran it on my home computer (programming it on eclipse here) and then running it via MobaXTerm online,
+ it ran over the internet (if quite slow) and I kept getting error messages that java could not find my audio files, but they are right outside
+ of the src folder where the other components of the program are, so I do not know why that happened.  Everything else is peachy though.
+ 
+ 
+ ## Extra Credit
+ I completed the extra credit for including sound effects!!
+ The sound effects are unique for these four events;
+ 
+ Moving tiles, stepping on a mine, losing all lives, and finishing the game
+ 
+ All sounds are guarenteed to make anyone laugh with glee all the way home.
+ 
+ 
+ ## Sources Used
+ https://stackoverflow.com/questions/26305/how-can-i-play-sound-in-java
+ This link helped me in putting my .wav files into the program and play them accordingly
+ 
+ https://stackoverflow.com/questions/7080205/popup-message-boxes
+ This link helped me in creating the pop-up boxes that appear to alert the player that they won, or they died.
